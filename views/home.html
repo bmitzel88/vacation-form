@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Dream Vacation</title>
     <link rel="stylesheet" href="/styles/styles.css">
+    <script src="js/validation.js" defer></script>
 </head>
 <body>
     <main>
@@ -15,6 +16,7 @@
 
         <form id="vacation-form" action="#" method="get">
             <div class="container destination">
+                <span class="err" id="err-destination">Destination is required</span>
                 <label for="destination">Destination</label>
                 <select id="destination">
                     <option id="none" value="none">Choose a destination</option>
@@ -25,11 +27,13 @@
             </div>
 
             <div class="container">
+                <span class="err" id="err-dep-date">Departure Date is required</span>
                 <label for="dep-date">Departure Date</label>
                 <input type="date" id="dep-date" name="dep-date">
             </div>
 
             <div class="container">
+                <span class="err" id="err-travelers">Number of Travelers is required</span>
                 <label for="travelers">Number of Travelers</label>
                 <input type="number" id="travelers" name="travelers">
             </div>
