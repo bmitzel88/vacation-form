@@ -3,10 +3,48 @@
 }
 
 #vacation-form {
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 50px;
+    margin-top: 1.5rem;
+}
+
+body {
+    background-color: rgb(179, 179, 182);
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-color: rgb(213, 213, 222);
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    border-radius: .75rem;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    border-radius: .75rem .75rem 0 0;
+}
+
+header h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 .container {
@@ -20,8 +58,29 @@
 }
 
 #submit {
+    width: 100%;
     grid-column: 1 / -1;
     justify-self: center;
+    border-radius: 1rem;
+    padding: .75rem;
+}
+
+select {
+    width: 100%;
+    border: 1px solid rgb(55, 55, 118);
     border-radius: .25rem;
+    padding: .75rem;
+}
+
+#travelers, label[for="travelers"] {
+    width: 90%;
+    align-self: flex-end;
+}
+
+input[type="date"], input[type="number"] {
+    width: 90%;
+    align-items: end;
+    border: 1px solid rgb(55, 55, 118);
+    border-radius: .5rem;
     padding: .75rem;
 }
