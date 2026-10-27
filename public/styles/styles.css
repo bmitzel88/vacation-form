@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+#vacation-form {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.destination {
+    grid-column: 1 / -1;
+}
+
+#submit {
+    grid-column: 1 / -1;
+    justify-self: center;
+    border-radius: .25rem;
+    padding: .75rem;
+}
